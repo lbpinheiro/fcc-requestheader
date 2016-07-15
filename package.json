@@ -1,0 +1,24 @@
+{
+  "name": "fcc-requestheader",
+  "version": "1.0.0",
+  "description": "get the IP address, language and operating system for the browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lbpinheiro/fcc-requestheader.git"
+  },
+  "keywords": [
+    "node.js",
+    "freecodecamp",
+    "api"
+  ],
+  "author": "Lucas Batochi Pinheiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lbpinheiro/fcc-requestheader/issues"
+  },
+  "homepage": "https://github.com/lbpinheiro/fcc-requestheader#readme"
+}
