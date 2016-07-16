@@ -9,7 +9,10 @@ GET, in route '/'. Returns a json with some client browser's attributes
 
 ### Live website
 
-TODO
+ https://fcc-requestheader.herokuapp.com/
+
+ A simple API call test:
+ https://fcc-requestheader.herokuapp.com/test
 
 ## Returning JSON
 

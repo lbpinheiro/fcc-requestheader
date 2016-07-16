@@ -4,8 +4,7 @@
   "description": "get the IP address, language and operating system for the browser",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon bin/www",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node bin/www"
   },
   "repository": {
     "type": "git",
