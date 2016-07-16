@@ -2,8 +2,9 @@
   "name": "fcc-requestheader",
   "version": "1.0.0",
   "description": "get the IP address, language and operating system for the browser",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "nodemon bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +21,15 @@
   "bugs": {
     "url": "https://github.com/lbpinheiro/fcc-requestheader/issues"
   },
-  "homepage": "https://github.com/lbpinheiro/fcc-requestheader#readme"
+  "homepage": "https://github.com/lbpinheiro/fcc-requestheader#readme",
+  "dependencies": {
+    "cluster": "^0.7.7",
+    "debug": "^2.2.0",
+    "express": "^4.14.0",
+    "http": "0.0.0",
+    "os": "^0.1.1",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.3.0",
+    "useragent": "^2.1.9"
+  }
 }

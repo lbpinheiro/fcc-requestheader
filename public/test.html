@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Request Header API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/stylesheets/skeleton.css">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="../../dist/images/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body class="bodyShift">
+
+    <div class="container">
+      <div class="ten columns">
+        <div class="center-text row">
+          <h1>Request Header</h1>
+          <p>A <a href="https://www.freecodecamp.com/challenges/request-header-parser-microservice">FreeCodeCamp</a> exercise</p>
+        </div>
+        <div class="row shiftDown center-text">
+          <pre><code id="returningJson" class="prettyprint">
+          </code></pre>
+        </div>
+
+        <div class="row center-text">
+           <button class="button-primary" id="invoke">Invoke API</button>
+        </div>
+
+        <div class="row center-text">
+          <hr/>
+          <p><a href="https://twitter.com/lucasdesenv">Lucas B. Pinheiro</a> 2016</p>
+          <p>This code is on Github <a href="https://github.com/lbpinheiro/fcc-requestheader">
+<img border="0" alt="Github logo" src="GitHub-Mark-32px.png">
+</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!--used in <pre><code> https://github.com/google/code-prettify-->
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#invoke").click(function(){
+          $.getJSON("..", function(data) {
+            console.log(data);
+            $("#returningJson").html(JSON.stringify(data));
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
